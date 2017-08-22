@@ -10,11 +10,11 @@ catkin_package(
 
 
 include_directories(include)
-add_library(serial
+add_library(rcmath
 	    src/rcmath/rc_linear_algebra.c
-        src/rcmath/rc_linear_filter.c
-        src/rcmath/rc_linear_matrix.c
-        src/rcmath/rc_linear_neon_functions.c
+        src/rcmath/rc_filter.c
+        src/rcmath/rc_matrix.c
+        src/rcmath/rc_neon_functions.c
         src/rcmath/rc_polynomial.c
         src/rcmath/rc_ring_buffer.c
         src/rcmath/rc_vector.c
